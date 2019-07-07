@@ -81,11 +81,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header_buy{
-	position: relative;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+.header_buy_basket_btn{
+	position: relative;
 }
 .many_tovar{
 	color: #fff;
@@ -97,8 +99,8 @@ h1, h2, h3, h4, h5, h6{
 	height: 24px;
 	border-radius: 12px;
 	position: absolute;
-	top: 20px;
-	right: 75px;
+	top: 1px;
+	right: 2px;
 	z-index: 1;
 }
 .many_tovar_null{
@@ -295,6 +297,17 @@ h1, h2, h3, h4, h5, h6{
 	transform: rotate(135deg);
 }
 /* Things */
+.things_name{
+	padding: 10px 0;
+	background: url("../images/background_slider.jpg") no-repeat center;
+	background-size: cover;
+}
+.things_name_text{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 31px;
+	color: #fff;
+}
 
 .things_inner{
 	display: flex;
@@ -365,10 +378,30 @@ h1, h2, h3, h4, h5, h6{
 	justify-content: center;
 }
 .team_item{
-	width: 50%;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 40%;
+	max-width: 340px;
 }
 .team_info{
-	text-align: center;
+}
+.team_photo{
+/* 	position: relative; */
+	overflow: hidden;
+	border-radius: 50px;
+	height: 100px;
+	width: 100px;
+	min-height: 100px;
+	min-width: 100px;
+	margin-right: 10px;
+}
+.team_photo img{
+/* 	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1; */
+	width: 100%;
+	height: auto;
 }
 .team_name{
 	color: #fff;
@@ -378,6 +411,35 @@ h1, h2, h3, h4, h5, h6{
 	color: #fff;
 	font-family: 'Open Sans';
 	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.team_social{
+	display: flex;
+	flex-flow: row wrap;
+}
+.team_social a{
+	border-radius: 16px;
+	margin-right: 10px;
+	background-color: #fff;
+	height: 32px;
+	width: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.2s linear;
+}
+.team_social a:hover{
+	background-color: #2da89b;
+}
+.team_social a svg{
+	fill: #2da89b;
+	width: 22px;
+	height: 22px;
+	transition: fill 0.2s linear;
+}
+.team_social a:hover svg{
+	fill: #fff;
 }
 /* footer */
 .footer{
